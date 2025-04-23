@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000"); // Backend URL
+const socket = io("https://chatback-gamma.vercel.app/"); // Backend URL
 
 const ChatRoom = ({ roomId }) => {
   const [msg, setMsg] = useState("");
